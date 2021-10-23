@@ -1,0 +1,35 @@
+.container{
+    width: 20rem;
+    height: 3rem;
+    margin-top: 20%;
+    margin-left: 30%;
+   
+   text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+}
+.load{
+    border:2px solid black;
+    padding-top: 0.7rem;    
+    transition: transform 1s linear;
+    animation: load 3s ease-in-out 0.5s infinite alternate;
+}
+@keyframes load{
+    0%{
+        background-color:darkcyan;
+        transform: rotateZ(-45deg); 
+    }
+    50%{
+        color: whitesmoke;
+        background-color: black;
+        transform: rotateZ(0deg); 
+         
+    }
+    100%{
+        background-color: coral;
+    transform: rotateZ(45deg); 
+        
+    }
+}
